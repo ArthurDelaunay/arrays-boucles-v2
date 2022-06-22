@@ -118,14 +118,27 @@
 // -4
 
 // 14 - Amstrong Number
-for (let i=0; i < 1000; i += 1) {
+// for (let i=0; i < 1000; i += 1) {
+//     let stringifiedNumber = i.toString()
+//     let Numbers = stringifiedNumber.split("")
+//     totalCubic = 0
+//     for (let number = 0; number < Numbers.length; number += 1){
+//         totalCubic = totalCubic + (Numbers[number] ** 3)
+//     }
+//     if (totalCubic === i) {
+//         console.log(i)
+//     } 
+// }
+
+// 15 - Amstrong Number générique
+for (let i=0; i < 10000; i += 1) {
     let stringifiedNumber = i.toString()
     let Numbers = stringifiedNumber.split("")
-    totalCubic = 0
+    total = 0
     for (let number = 0; number < Numbers.length; number += 1){
-        totalCubic = totalCubic + (Numbers[number] ** 3)
+        total = total + (Numbers[number] ** Numbers.length)
     }
-    if (totalCubic === i) {
+    if (total === i) {
         console.log(i)
     } 
 }
